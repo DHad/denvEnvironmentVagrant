@@ -1,0 +1,41 @@
+Bringing machine 'fed29' up with 'virtualbox' provider...
+==> fed29: Importing base box 'fedora/29-cloud-base'...
+[KProgress: 90%[K==> fed29: Matching MAC address for NAT networking...
+==> fed29: Setting the name of the VM: 6d1e29bafb28667eb84abdf2b222a64a_fed29_1553991072660_66749
+==> fed29: Clearing any previously set network interfaces...
+==> fed29: Preparing network interfaces based on configuration...
+    fed29: Adapter 1: nat
+    fed29: Adapter 2: hostonly
+==> fed29: Forwarding ports...
+    fed29: 22 (guest) => 2222 (host) (adapter 1)
+==> fed29: Running 'pre-boot' VM customizations...
+==> fed29: Booting VM...
+==> fed29: Waiting for machine to boot. This may take a few minutes...
+    fed29: SSH address: 127.0.0.1:2222
+    fed29: SSH username: vagrant
+    fed29: SSH auth method: private key
+    fed29: 
+    fed29: Vagrant insecure key detected. Vagrant will automatically replace
+    fed29: this with a newly generated keypair for better security.
+    fed29: 
+    fed29: Inserting generated public key within guest...
+    fed29: Removing insecure key from the guest if it's present...
+    fed29: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> fed29: Machine booted and ready!
+[fed29] GuestAdditions versions on your host (5.2.26) and guest (5.2.0) do not match.
+Fedora Modular 29 - x86_64                      2.8 kB/s | 3.4 kB     00:01    
+Error: Failed to synchronize cache for repo 'fedora-modular'
+==> fed29: Checking for guest additions in VM...
+The following SSH command responded with a non-zero exit status.
+Vagrant assumes that this means the command failed!
+
+`bash -c 'type -p dnf || type -p yum'` install -y kernel-devel-`uname -r` gcc dkms make perl bzip2
+
+Stdout from the command:
+
+Fedora Modular 29 - x86_64                      2.8 kB/s | 3.4 kB     00:01    
+
+
+Stderr from the command:
+
+Error: Failed to synchronize cache for repo 'fedora-modular'
